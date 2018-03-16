@@ -122,6 +122,7 @@ eventQueries = getQueryFromTBA("/team/"+teamKey+"/events/2018")
 #filter out the event name and the event Key and put it in
 for eventQuery in eventQueries:
     events.append(Event(eventQuery['key'],eventQuery['name']))
+    print(eventQuery['key'])
 
 for event in events:
     event.getMatchData()
