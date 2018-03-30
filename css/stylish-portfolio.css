@@ -128,7 +128,7 @@ h6 {
 }
 
 .masthead .active {
-  width: calc(60%);
+  width: calc(100% - 300px);
   -webkit-transition: all 1s ease 0s;
   -moz-transition: all 1s ease 0s;
   -ms-transition: all 1s ease 0s;
@@ -141,7 +141,7 @@ h6 {
   position: fixed;
   z-index: 2;
   right: 0;
-  width: 40%;
+  width: 300px;
   height: 100%;
   -webkit-transition: all 1s ease 0s;
   -moz-transition: all 1s ease 0s;
@@ -212,8 +212,8 @@ h6 {
 }
 
 #sidebar-wrapper.active {
-  right: 40%;
-  width: 40%;
+  right: 300px;
+  width: 300px;
   -webkit-transition: all 1s ease 0s;
   -moz-transition: all 1s ease 0s;
   -ms-transition: all 1s ease 0s;
