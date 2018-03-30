@@ -80,7 +80,7 @@ h6 {
 }
 
 .form-area.active {
-  padding-right: 400px !important;
+  padding-right: 300px !important;
   -webkit-transition: all 1s ease 0s;
   -moz-transition: all 1s ease 0s;
   -ms-transition: all 1s ease 0s;
@@ -128,7 +128,7 @@ h6 {
 }
 
 .masthead .active {
-  width: calc(100% - 400px);
+  width: calc(60%);
   -webkit-transition: all 1s ease 0s;
   -moz-transition: all 1s ease 0s;
   -ms-transition: all 1s ease 0s;
@@ -141,22 +141,22 @@ h6 {
   position: fixed;
   z-index: 2;
   right: 0;
-  width: 400px;
+  width: 40%;
   height: 100%;
   -webkit-transition: all 1s ease 0s;
   -moz-transition: all 1s ease 0s;
   -ms-transition: all 1s ease 0s;
   -o-transition: all 1s ease 0s;
   transition: all 1s ease 0s;
-  transform: translateX(400px);
-  background: #1D809F;
+  transform: translateX(100%);
+  background: #4C83C4;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .sidebar-nav {
   position: absolute;
   top: 0;
-  width: 400px;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -167,6 +167,18 @@ h6 {
   text-decoration: none;
   color: #fff;
   padding: 15px;
+  text-align: right;
+}
+
+#match-number {
+  padding-left: 5px;
+}
+
+.sidebar-nav li.sidebar-nav-item a table {
+  text-align: center !important;
+  align-items: center !important;
+  vertical-align: middle;
+  width: 100%;
 }
 
 .sidebar-nav li a:hover {
@@ -200,8 +212,8 @@ h6 {
 }
 
 #sidebar-wrapper.active {
-  right: 400px;
-  width: 400px;
+  right: 40%;
+  width: 40%;
   -webkit-transition: all 1s ease 0s;
   -moz-transition: all 1s ease 0s;
   -ms-transition: all 1s ease 0s;
@@ -230,9 +242,118 @@ h6 {
   background: #343a40;
 }
 
+.menu-toggle {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 50px;
+  z-index: 999;
+}
+
+.menu-toggle:focus, .menu-toggle:hover {
+  color: #fff;
+}
+
+.menu-toggle:hover {
+  background: #343a40;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #555 transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.popup {
+  -webkit-animation: fadeOut 1s;
+  animation: fadeOut 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+table {
+  text-align: center !important;
+  width: 100%;
+}
+
 .service-icon {
   background-color: #fff;
-  color: #1D809F;
+  color: #4C83C4;
   height: 7rem;
   width: 7rem;
   display: block;
@@ -316,7 +437,7 @@ h6 {
     clip-path: inset(2rem);
   }
   .portfolio-item:hover .caption {
-    background-color: rgba(29, 128, 159, 0.9);
+    background-color: rgba(76, 131, 196, 0.9);
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
@@ -334,18 +455,18 @@ footer.footer .social-link {
   width: 4rem;
   line-height: 4.3rem;
   font-size: 1.5rem;
-  background-color: #1D809F;
+  background-color: #4C83C4;
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 footer.footer .social-link:hover {
-  background-color: #155d74;
+  background-color: #376aa6;
   text-decoration: none;
 }
 
 #form-area2.active {
-  padding-right: 400px !important;
+  padding-right: 300px !important;
   -webkit-transition: all 1s ease 0s;
   -moz-transition: all 1s ease 0s;
   -ms-transition: all 1s ease 0s;
@@ -363,33 +484,33 @@ footer.footer .social-link:hover {
 }
 
 a {
-  color: #1D809F;
+  color: #4C83C4;
 }
 
 a:hover, a:focus, a:active {
-  color: #155d74;
+  color: #376aa6;
 }
 
 .btn-primary {
-  background-color: #1D809F !important;
-  border-color: #1D809F !important;
+  background-color: #4C83C4 !important;
+  border-color: #4C83C4 !important;
   color: #fff !important;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #155d74 !important;
-  border-color: #155d74 !important;
+  background-color: #376aa6 !important;
+  border-color: #376aa6 !important;
 }
 
 .btn-secondary {
-  background-color: #ecb807 !important;
-  border-color: #ecb807 !important;
+  background-color: #0A2634 !important;
+  border-color: #0A2634 !important;
   color: #fff !important;
 }
 
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
-  background-color: #ba9106 !important;
-  border-color: #ba9106 !important;
+  background-color: #020709 !important;
+  border-color: #020709 !important;
 }
 
 .btn-dark {
@@ -402,13 +523,13 @@ a:hover, a:focus, a:active {
 }
 
 .bg-primary {
-  background-color: #1D809F !important;
+  background-color: #4C83C4 !important;
 }
 
 .text-primary {
-  color: #1D809F !important;
+  color: #4C83C4 !important;
 }
 
 .text-secondary {
-  color: #ecb807 !important;
+  color: #0A2634 !important;
 }
