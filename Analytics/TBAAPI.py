@@ -171,7 +171,7 @@ df.to_csv('teamData.csv')
 
 def getNextMatch(eventcode):
     nextMatch = ""
-    matchList = getQueryFromTBA("/event/"+"2018cada"+"/matches/simple")
+    matchList = getQueryFromTBA("/event/"+"2018casj"+"/matches/simple")
     matchList.sort(key=lambda x: x['match_number'])
     for match in matchList:
 
